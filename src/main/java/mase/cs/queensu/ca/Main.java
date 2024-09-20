@@ -5,6 +5,7 @@ package mase.cs.queensu.ca;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Start");
         // using ints
         int x=0;
         int y=x+1;
@@ -35,8 +36,7 @@ public class Main {
         interface FuncI {
             int f(int x);
         }
-        FuncI funcObj = (int c)->{return 2*c;};
-        // int a=1;
+        FuncI funcObj = (int n)->{return 2*n;};
         int b1 = funcObj.f(1);
         if (b1!=2) {
             System.out.println("unreachable");
@@ -45,6 +45,6 @@ public class Main {
         if (b2!=4) {
             System.out.println("unreachable");
         }
-
+        System.out.println("End");
     }
 }
