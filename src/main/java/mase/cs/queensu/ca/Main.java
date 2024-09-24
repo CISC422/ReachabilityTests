@@ -6,7 +6,7 @@ package mase.cs.queensu.ca;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Start");
-        // using ints
+        // test 1: using ints
         int x=0;
         int y=x+1;
         int z=y+1;
@@ -14,7 +14,7 @@ public class Main {
             System.out.println("unreachable");
         }
 
-        // using array
+        // test 2: using array
         int[] A = {0,0,0,0,0};
         A[1]=A[0]+1;
         A[2]=A[1];
@@ -22,9 +22,9 @@ public class Main {
             System.out.println("unreachable");
         }
 
-        // using objects
+        // test 3: using objects
         class Node {
-            int a=1;
+            final int a=1;
         }
         Node n0 = new Node();
         // n0.a++;
@@ -32,7 +32,7 @@ public class Main {
             System.out.println("unreachable");
         }
 
-        // using functions ('functional interfaces' and 'lambda expressions')
+        // test 4: using functions ('functional interfaces' and 'lambda expressions')
         interface FuncI {
             int f(int x);
         }
@@ -46,12 +46,12 @@ public class Main {
             System.out.println("unreachable");
         }
 
-        // using loops
+        // test 5: using loops
         int up=0;
         int down=9;
         while (up!=down) {
             up++;
-            // down--;
+            down--;
         }
 
         System.out.println("End");
