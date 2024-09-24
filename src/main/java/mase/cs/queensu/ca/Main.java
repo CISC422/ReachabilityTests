@@ -45,6 +45,15 @@ public class Main {
         if (b2!=4) {
             System.out.println("unreachable");
         }
+
+        // using loops
+        int up=0;
+        int down=9;
+        while (up!=down) {
+            up++;
+            // down--;
+        }
+
         System.out.println("End");
     }
 }
